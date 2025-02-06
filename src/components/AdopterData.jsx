@@ -6,27 +6,42 @@ export class AdopterData extends Component {
 
     return (
       <div>
-        <table>
+        <table
+          style={{
+            borderCollapse: "collapse",
+            width: "70%",
+            border: "1px solid #ddd",
+            fontSize: "18px",
+            textAlign: "left",
+            padding: "8px",
+            backgroundColor: "#f2f2f2",
+            color: "#333",
+            textTransform: "capitalize",
+            fontFamily: "Arial, sans-serif",
+            marginTop: "20px",
+            marginBottom: "20px",
+          }}
+        >
           <thead>
             <tr>
-              <th>Pet Name</th>
-              <th>Pet Type</th>
-              <th>Breed</th>
-              <th>Adopter Name</th>
-              <th>Email</th>
-              <th>Phone</th>
+              <th style={{ textAlign: "center" }}>Pet Name</th>
+              <th style={{ textAlign: "center" }}>Pet Type</th>
+              <th style={{ textAlign: "center" }}>Breed</th>
+              <th style={{ textAlign: "center" }}>Adopter Name</th>
+              <th style={{ textAlign: "center" }}>Email</th>
+              <th style={{ textAlign: "center" }}>Phone</th>
             </tr>
           </thead>
           <tbody>
             {formData.map((data, index) => {
               return (
                 <tr key={index}>
-                  <td>{data.petname}</td>
-                  <td>{data.pettype}</td>
-                  <td>{data.breed}</td>
-                  <td>{data.yname}</td>
-                  <td>{data.yemail}</td>
-                  <td>{data.yphone}</td>
+                  <td style={{ textAlign: "center" }}>{data.petname}</td>
+                  <td style={{ textAlign: "center" }}>{data.pettype}</td>
+                  <td style={{ textAlign: "center" }}>{data.breed}</td>
+                  <td style={{ textAlign: "center" }}>{data.yname}</td>
+                  <td style={{ textAlign: "center" }}>{data.yemail}</td>
+                  <td style={{ textAlign: "center" }}>{data.yphone}</td>
                 </tr>
               );
             })}
