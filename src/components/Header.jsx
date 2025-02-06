@@ -4,12 +4,14 @@ const Header = ({ message }) => {
   return (
     <div
       style={{
-        height: "50px",
+        height: "80px",
         backgroundColor: "#c59771bd",
         color: "#1c4f1d",
-        padding: "16px 32px",
-        fontSize: "20px",
+        padding: "32px 32px",
         fontWeight: "bold",
+        textAlign: "center",
+        fontSize: "27px",
+        fontFamily: "'Helvetica', 'Arial', sans-serif",
       }}
     >
       {message}
