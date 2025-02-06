@@ -32,13 +32,21 @@ export class AdopterData extends Component {
             })}
           </tbody>
         </table>
-        <button
-          onClick={() => {
-            this.props.getShow((prev) => !prev);
-          }}
-        >
-          Go Back
-        </button>
+        <div style={{ marginTop: "20px", textAlign: "center" }}>
+          <button
+            onClick={() => {
+              this.props.getShow((prev) => !prev);
+            }}
+            style={{
+              padding: "10px 20px",
+              boxSizing: "border-box",
+              width: "auto",
+              display: "inline-block",
+            }}
+          >
+            Go Back
+          </button>
+        </div>
       </div>
     );
   }
